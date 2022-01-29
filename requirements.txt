@@ -1,0 +1,6 @@
+click==8.0.3
+colorama==0.4.4
+grid==0.7.1
+numpy==1.21.3
+pygame==2.0.3
+typer==0.4.0
