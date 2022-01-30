@@ -54,8 +54,8 @@ def parse_cli_args(
         offset: int = typer.Option(1, help = "Thickness of borders"),
         fps: int = typer.Option(60, help = "Frames per second"),
         millisecs_between_iters:int = typer.Option(100, help = "How many milliseconds that passes between each iterations."),
-        active_color: tuple[int, int, int] = typer.Option((0, 14, 71), help = "RGB tuple for color of active cells. Default -> Blue"),
-        inactive_color: tuple[int, int, int] = typer.Option((255, 255, 255), help = "RGB tuple color of inactive cells. Default -> White")
+        #active_color: tuple[int, int, int] = typer.Option((0, 14, 71), help = "RGB tuple for color of active cells. Default -> Blue"),
+        #inactive_color: tuple[int, int, int] = typer.Option((255, 255, 255), help = "RGB tuple color of inactive cells. Default -> White")
         ):
 
         gol_input_validator = GOLInputs()
@@ -65,12 +65,12 @@ def parse_cli_args(
         gol_input_validator.scale = scale
         gol_input_validator.offset = offset
         gol_input_validator.millisecs_between_secs = millisecs_between_iters
-        gol_input_validator.active_color = active_color
-        gol_input_validator.inactive_color = inactive_color
+        #gol_input_validator.active_color = active_color
+        #gol_input_validator.inactive_color = inactive_color
 
-        main(n, preset_initial_cond[initial_cond_index], width, height, scale, offset, fps, millisecs_between_iters, active_color, inactive_color)
+        main(n, preset_initial_cond[initial_cond_index], width, height, scale, offset, fps, millisecs_between_iters)
 
-def main(n, initial_cond, width, height, scale,  offset, fps, millisecs_between_iters, active_color, inactive_color):
+def main(n, initial_cond, width, height, scale,  offset, fps, millisecs_between_iters, active_color=(0, 14, 71), inactive_color=(255, 255, 255)):
     run = True
     rows = int(height / scale)
     columns = int(width / scale)

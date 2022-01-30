@@ -18,12 +18,14 @@ SETUP:
 2. Go to app's root directory 
 Run via command line: 
 3. virtualenv -p python3 .
-4. source Scripts/activate
+4. source bin/activate
 5. pip install -r requirements.txt
 6. python main.py --help or python main.py
 
 SOURCES:
 
 Jack Diederich's Stop Writing Classed: https://www.youtube.com/watch?v=o9pEzgHorH0
+
 James Powel's 'So You Want to Be a Python Expert?': https://www.youtube.com/watch?v=cKPlPJyQrt4
+
 Raymond Hettinger's 'Build Powerful, New Data Structures With Python's Abstract Base Classes' : https://www.youtube.com/watch?v=S_ipdVNSFlo
