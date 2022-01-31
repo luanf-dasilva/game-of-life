@@ -44,6 +44,6 @@ def timer(func):
         before = time()
         rv = func(*args, **kwargs)
         after = time()
-        print("%s took {:0.2f} seconds to complete".format(after - before), end=" ")
+        print("Took {:0.2f} seconds to complete".format(after - before), end=" ")
         return rv
     return wrapper

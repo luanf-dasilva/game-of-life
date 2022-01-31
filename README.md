@@ -24,6 +24,11 @@ Run via command line:
 
 SOURCES:
 
-Jack Diederich's Stop Writing Classed: https://www.youtube.com/watch?v=o9pEzgHorH0
-James Powel's 'So You Want to Be a Python Expert?': https://www.youtube.com/watch?v=cKPlPJyQrt4
-Raymond Hettinger's 'Build Powerful, New Data Structures With Python's Abstract Base Classes' : https://www.youtube.com/watch?v=S_ipdVNSFlo
+Jack Diederich's Stop Writing Classes: 
+https://www.youtube.com/watch?v=o9pEzgHorH0
+
+James Powel's 'So You Want to Be a Python Expert?': 
+https://www.youtube.com/watch?v=cKPlPJyQrt4
+
+Raymond Hettinger's 'Build Powerful, New Data Structures With Python's Abstract Base Classes':
+https://www.youtube.com/watch?v=S_ipdVNSFlo
