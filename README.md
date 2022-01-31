@@ -11,7 +11,7 @@ But I like classes. But I want to use them for their best use cases; and on abov
 
 Besides Jack Deiderich, I take inspiration from two other talks to familiarize myself with Python features and use cases for them: James Powel's 'So You Want to Be a Python Expert' and Raymond Hettinger's 'Build Powerful, New Data Structures With Python's Abstract Base Classes'. Powel demonstrates a nice implementation of decorators to time functions, and Hettinger has a Validator which I use to check if the inputs given to the program via command line are meaningful.  
 
-SETUP:
+SETUP (or similar depending on your operating system):
 
 0. Install python, pip and virtualenv
 1. Clone the repo

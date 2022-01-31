@@ -6,12 +6,13 @@ from typing import Tuple
 from game_options import options_map, options_tuple
 from conway import random_init, run_gol
 from util import RGB, Integer, timer
+
 __app_name__ = "CONWAY'S SIMPLE (AND FUNCTIONAL) GAME OF LIFE"
-__version__ = "0.5.0"
+__version__ = "1.0.0"
 
 class GOLInputs:
     n = Integer(minsize = 1, maxsize = 10000, input_name = "iterations")
-    run_option = Integer(minsize = 0, maxsize = len(options_tuple._fields) + 1, input_name = "run_option")
+    run_option = Integer(minsize = 0, maxsize = len(options_tuple._fields), input_name = "run_option")
     width = Integer(minsize = 180, maxsize = 1980, input_name = "iterations")
     height = Integer(minsize = 180, maxsize = 1980, input_name = "height")
     scale = Integer(minsize = 1, maxsize = 100, input_name = "scale")
@@ -69,6 +70,7 @@ def main(n, initial_cond, width, height, scale,  offset, fps, millisecs_between_
             \nRunning Conway's game for %s iterations""" 
             %(columns, rows, n))
 
+    input("Press enter to start Conway's Game of Life...")
 
     pygame.init()
     pygame.display.set_caption("Conway's Game of Life")
