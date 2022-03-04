@@ -47,3 +47,4 @@ def timer(func):
         print("Took {:0.2f} seconds to complete".format(after - before), end=" ")
         return rv
     return wrapper
+    
