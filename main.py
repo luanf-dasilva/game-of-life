@@ -18,7 +18,7 @@ class GOLInputs:
     scale = Integer(minsize = 1, maxsize = 100, input_name = "scale")
     offset = Integer(minsize = 1, maxsize = 5, input_name = "offset")
     fps = Integer(minsize = 10, maxsize = 90, input_name = "fps")
-    millisecs_between_secs = Integer(minsize = 0, maxsize = 1500, input_name = "millisecs_between_secs")
+    millisecs_between_iters = Integer(minsize = 0, maxsize = 1500, input_name = "millisecs_between_iters")
     active_color = RGB(input_name = "active_color")
     inactive_color = RGB(input_name = "inactive_color")
 
@@ -53,7 +53,7 @@ def parse_cli_args(
         gol_input_validator.height = height
         gol_input_validator.scale = scale
         gol_input_validator.offset = offset
-        gol_input_validator.millisecs_between_secs = millisecs_between_iters
+        gol_input_validator.millisecs_between_iters = millisecs_between_iters
         gol_input_validator.active_color = active_color
         gol_input_validator.inactive_color = inactive_color
 
