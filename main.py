@@ -44,7 +44,7 @@ def parse_cli_args(
         fps: int = typer.Option(60, help = "Frames per second"),
         millisecs_between_iters:int = typer.Option(100, help = "How many milliseconds that passes between each iterations"),
         active_color: Tuple[int, int, int] = typer.Option((0, 14, 71), help = "RGB tuple for color of active cells. Default -> Blue"),
-        inactive_color: Tuple[int, int, int] = typer.Option((255, 255, 255), help = "RGB tuple color of inactive cells. Default -> White")
+        inactive_color: Tuple[int, int, int] = typer.Option((255, 255, 255), help = "RGB tuple for color of inactive cells. Default -> White")
         ):
 
         gol_input_validator = GOLInputs()
