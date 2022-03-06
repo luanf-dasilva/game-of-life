@@ -13,7 +13,7 @@ __version__ = "1.0.0"
 class GOLInputs:
     n = Integer(minsize = 1, maxsize = 10000, input_name = "iterations")
     run_option = Integer(minsize = 0, maxsize = len(options_tuple._fields), input_name = "run_option")
-    width = Integer(minsize = 180, maxsize = 1980, input_name = "iterations")
+    width = Integer(minsize = 180, maxsize = 1980, input_name = "width")
     height = Integer(minsize = 180, maxsize = 1980, input_name = "height")
     scale = Integer(minsize = 1, maxsize = 100, input_name = "scale")
     offset = Integer(minsize = 1, maxsize = 5, input_name = "offset")
